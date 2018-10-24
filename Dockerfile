@@ -23,9 +23,9 @@ RUN { \
 
 VOLUME /var/www/html
 
-COPY installer.php /installer.php
-COPY docker-entrypoint.sh /entrypoint.sh
+#COPY installer.php /installer.php
+#COPY docker-entrypoint.sh /entrypoint.sh
 
 # grr, ENTRYPOINT resets CMD now
-ENTRYPOINT ["/entrypoint.sh"]
+#ENTRYPOINT ["/entrypoint.sh"]
 CMD ["apache2-foreground"]
