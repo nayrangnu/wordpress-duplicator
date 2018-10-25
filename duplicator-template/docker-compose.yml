@@ -24,7 +24,7 @@ services:
       - "dbvolume:/var/lib/mysql"
     restart: always
     
- phpmyadmin:
+  phpmyadmin:
     image: phpmyadmin/phpmyadmin
     links:
       - mysql:db
