@@ -7,7 +7,7 @@ This image sets up the environment to clone and run a wordpress archive created 
 Download the template files, which contains a docker-compose file and the project structure.
 
 ```bash
-$ curl -L https://github.com/drlogout/wordpress-duplicator/blob/v1.0.0/duplicator-template.tar.gz\?raw\=true | tar xz
+$ curl -L https://github.com/nayrangnu/wordpress-duplicator/blob/v1.0.0/duplicator-template.tar.gz\?raw\=true | tar xz
 ```
 
 Rename the folder.
@@ -38,7 +38,7 @@ Then navigate to [http://localhost:8080/installer.php](http://localhost:8080/ins
 
 Enter the database settings as shown in the image below:
 
-![DB settings](https://github.com/drlogout/wordpress-duplicator/raw/master/images/installer-db-settings.png "DB settings")
+![DB settings](https://github.com/nayrangnu/wordpress-duplicator/raw/master/images/installer-db-settings.png "DB settings")
 
 ### Opcache
 
