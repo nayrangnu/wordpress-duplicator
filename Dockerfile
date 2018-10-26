@@ -39,6 +39,16 @@ RUN { \
 		echo 'opcache.enable_cli=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
+RUN { \
+		echo 'file_uploads = On'; \
+		echo 'memory_limit = 64M'; \
+		echo 'upload_max_filesize = 64M'; \
+		echo 'post_max_size = 64M'; \
+		echo 'max_execution_time = 600'; \
+		echo 'max_file_uploads = 128M'; \
+		echo 'max_input_vars = 5000'; \
+	} > /usr/local/etc/php/conf.d/uploads.ini
+
 RUN a2enmod rewrite expires
 
 VOLUME /var/www/html
